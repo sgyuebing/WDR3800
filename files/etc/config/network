@@ -25,15 +25,16 @@ config switch
 	option reset '1'
 	option enable_vlan '0'
 
-config interface 'wan'
-	option proto 'dhcp'
-	option device 'eth1'
-
 config interface 'trm_wwan'
 	option proto 'dhcp'
 	option metric '100'
+	option broadcast '1'
 
 config interface 'trm_wwan6'
 	option device '@trm_wwan'
 	option proto 'dhcpv6'
+
+config interface 'wan'
+	option proto 'dhcp'
+	option device 'eth1'
 

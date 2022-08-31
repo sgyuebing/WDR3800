@@ -26,3 +26,12 @@ config led 'led_wifi'
 	list mode 'tx'
 	list mode 'rx'
 
+config led
+	option name 'wifi'
+	option sysfs 'green:wlan'
+	option trigger 'netdev'
+	option dev 'wlan0'
+	list mode 'link'
+	list mode 'tx'
+	list mode 'rx'
+
