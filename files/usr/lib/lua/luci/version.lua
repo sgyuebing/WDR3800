@@ -16,5 +16,5 @@ else
 	distversion = "Development Snapshot"
 end
 
-luciname    = "BI4PCS"
-luciversion = "MMDVM 2022.12.13"
+luciname    = "MMDVM"
+luciversion = "2023.03.15"
