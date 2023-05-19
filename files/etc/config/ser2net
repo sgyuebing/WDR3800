@@ -1,6 +1,6 @@
 
 config ser2net 'global'
-	option enabled '1'
+	option enabled '0'
 
 config controlport
 	option enabled '0'
@@ -12,9 +12,6 @@ config default
 	option databits '8'
 	option parity 'none'
 	option stopbits '1'
-	option rtscts 'false'
-	option local 'false'
-	option remctl 'true'
 
 config proxy
 	option enabled '0'
